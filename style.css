@@ -1,0 +1,354 @@
+html,body {
+    font-family: "Plus Jakarta", sans-serif;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    margin: 0; 
+    padding: 0;
+}
+
+#header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;    
+}
+
+#upper-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+}
+
+#box1 {
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 10px;
+    color: #FFFFFF;
+    border: none;
+    font-weight: 800;
+    
+    font-size: 32px;
+    
+    height: 18%;
+    
+}
+
+/* text decoration */
+ .header-txt > h1 {
+    font-weight: 800;
+    font-size: 40px;
+    color: #13183F;
+}
+
+.paragraph {
+    font-weight: 500;
+    font-size: 16px;
+    color: #83869A;
+}
+/* ------------------------------------------------------------------------- */
+
+#box1, #animation, #design, #photography, #crypto, #business {
+
+    padding: 1rem;
+    margin: 2.5rem;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+
+
+.footer-txt {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #13183F;
+    /* left: -1rem;
+    bottom: -1rem; */
+    position: relative;
+    
+    width: 100%;
+    
+}
+
+
+/* container setting */
+#main-container {
+    
+    /* display: flex;
+    flex-direction: column; */
+
+    
+    justify-content: center;
+    align-items: center;
+    margin: auto 4%;
+    
+}
+
+
+.girl-img > img {
+    max-width: 23rem;
+    
+}
+
+.box-header {
+    color: #13183F;
+}
+
+/*buttons' styling*/
+.head-button {
+    background-color: #13183F;
+    color: #FFFFFF;
+    padding: 0.8rem;
+    border-radius: 28px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+}
+.get-started-btn {
+    font-weight: 700;
+    font-size: 18px;
+    color: #F74780;
+    text-decoration: none;
+    border: none;
+}
+.gradient-btn {
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 31.5px;
+    text-decoration: none;
+    border: none;
+    color: #FFFFFF;
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+    text-align: center;   
+    
+}
+
+.footer-button {
+    background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+    border-radius: 28px;
+    text-decoration: none;
+    border: none;
+    color: #FFFFFF;
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+    text-align: center;
+
+}
+
+/* --------------------------------------- */
+
+
+.description {
+    font-weight: 500;
+    font-size: 16px;
+    color: #83869A;
+}
+
+.brand {
+    font-weight: 800;
+    font-size: 28px;
+    color: #13183F;
+}
+
+.brand-white {
+    font-weight: 800;
+    font-size: 28px;
+    color: #FFFFFF;
+}
+
+.icons {
+    margin-top: -3rem;
+}
+
+/*media queries */
+
+/* TABLET STYLING */
+
+@media screen and (min-width: 768px) {
+    body {
+        margin: 0;
+    }
+
+    #main-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: max-content;
+    }
+
+    .girl-img > img {
+        content: url(image-hero-tablet.png);
+        position: relative;
+        /* left: 8rem;
+        top: -1rem; */
+        top: -3rem;
+        left: 8rem;    
+        max-width: 100%;
+        
+    }
+
+    #upper-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2%;
+        margin-right: 0;
+        margin-top: 0;        
+         
+    }
+
+    .girl-img {
+        margin-bottom: 0;
+        margin-right: 0;
+        /* overflow: hidden; */
+    }
+
+    #header {
+        justify-content: space-between;    
+    }
+
+    #header > p {
+        margin-left: 6%;
+    }
+    #header > a {
+        margin-right: 15%;
+    }
+
+    .header-txt {
+        width: 80%;
+    }
+
+    .header-txt > p {
+        margin-bottom: 2rem;
+    }
+
+    #box1 {
+        
+        padding-bottom: 8rem;
+    }
+
+    .footer-txt {
+        justify-content: space-between;
+    }
+    .footer-txt > p {
+        margin-left: 3rem;
+    }
+
+    .footer-txt > a {
+        margin-right: 3rem;
+    }
+
+    #box1, #animation, #design, #photography, #crypto, #business {
+        margin: 0.8rem;
+    }
+
+
+} 
+
+/* DESKTOP design */
+
+@media screen and (min-width: 992px) {
+    body {
+        margin: 0;
+        
+    }
+
+    #main-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: max-content;
+    }
+
+    .girl-img > img {
+        background-image: url(image-hero-tablet.png) no-repeat;
+        position: relative;
+        /* left: 53rem;
+        top: -4rem; */
+        top: -5rem;
+        left: 18rem;
+        max-height: 54rem;
+        padding: 0 4rem 4rem  0;
+        
+        
+        
+    }
+
+    #upper-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+              
+        height: 60vh; 
+        /* margin: 0 5% 0 5%; */
+        overflow: hidden;
+
+        
+    }
+
+    .girl-img {
+        margin-bottom: 0;
+        margin-right: 0;
+        padding: 0;
+        border: 0;
+        /* overflow: hidden; */
+        
+    }
+
+    #header {
+        justify-content: space-between;
+    
+    }
+
+    #header > p {
+        margin-left: 5%;
+    }
+    #header > a {
+        margin-right: 15%;
+        z-index: 2;
+    }
+
+    .header-txt {
+        width: 45%;
+    }
+
+    .header-txt > p {
+        margin-bottom: 2rem;
+    }
+
+    #box1 {
+        padding-bottom: 8rem;
+        margin: 0.8rem;        
+    }
+
+    .footer-txt {
+        justify-content: space-between;
+    }
+    .footer-txt > p {
+        margin-left: 5%;
+    }
+
+    .footer-txt > a {
+        margin-right: 5%;
+    }
+
+    .head-button:hover {
+        opacity: 70%;
+    }
+
+    .gradient-btn:hover {
+        opacity: 70%;
+    }
+
+    .footer-button:hover {
+        opacity: 70%;
+    }
+
+    .get-started-btn:hover {
+        opacity: 70%;
+    }
+    
+    #box1, #animation, #design, #photography, #crypto, #business {
+        margin: 0.8rem;
+    }
+} 
