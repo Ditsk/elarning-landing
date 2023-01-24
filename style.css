@@ -3,6 +3,7 @@ html,body {
     background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
     margin: 0; 
     padding: 0;
+    overflow-x: hidden;
 }
 
 #header {
@@ -82,6 +83,11 @@ html,body {
     
 }
 
+.girl-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .girl-img > img {
     max-width: 23rem;
@@ -254,7 +260,7 @@ html,body {
 @media screen and (min-width: 992px) {
     body {
         margin: 0;
-        
+        overflow-x: hidden;
     }
 
     #main-container {
@@ -264,18 +270,12 @@ html,body {
         height: 100%;
     }
 
-    .gir-img {
-        position: relative;
-        
-    }
-
-
     .girl-img > img {
         content: url(image-hero-desktop.png);
         /* crucial thing is to use percentages instead or rem/em/px units so the desired element
             won't start streching around the screen !!! */ 
-        top: -12%;
-        left: 55%;      
+        top: -5em;
+        left: 45em;      
         
         position: absolute;
         max-width: 55vw;
@@ -289,8 +289,6 @@ html,body {
         
         /* padding: 0 4rem 4rem  0; */
         
-        
-        
     }
 
     #upper-container {
@@ -301,7 +299,7 @@ html,body {
               
         height: 60vh; 
         /* margin: 0 5% 0 5%; */
-        /* overflow: hidden; */
+        /* overflow-x: hidden; */
         
         
     }
