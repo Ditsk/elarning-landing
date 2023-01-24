@@ -25,10 +25,7 @@ html,body {
     color: #FFFFFF;
     border: none;
     font-weight: 800;
-    
     font-size: 32px;
-    
-    height: 18%;
     
 }
 
@@ -48,8 +45,8 @@ html,body {
 
 #box1, #animation, #design, #photography, #crypto, #business {
 
-    padding: 1rem;
-    margin: 2.5rem;
+    /* padding: 1rem;
+    margin: 2.5rem; */
     box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
     border-radius: 10px;
     background-color: white;
@@ -164,7 +161,7 @@ html,body {
 
 /* TABLET STYLING */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     body {
         margin: 0;
     }
@@ -222,11 +219,6 @@ html,body {
         margin-bottom: 2rem;
     }
 
-    #box1 {
-        
-        padding-bottom: 8rem;
-    }
-
     .footer-txt {
         justify-content: space-between;
     }
@@ -238,12 +230,24 @@ html,body {
         margin-right: 3rem;
     }
 
-    #box1, #animation, #design, #photography, #crypto, #business {
-        margin: 0.8rem;
+    #animation, #design, #photography, #crypto, #business {
+        padding: 1em;
+        margin: 1em;
+        height: 11em;
     }
 
+    #box1 {
+        padding: 1em;
+        margin: 0.5em;
+        height: 4.5em;  
 
+        /* centering a paragraph vertically and horizontally */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 } 
+
 
 /* DESKTOP design */
 
@@ -256,33 +260,49 @@ html,body {
     #main-container {
         display: grid;
         grid-template-columns: auto auto auto;
-        grid-template-rows: max-content;
+        grid-template-rows: auto auto;
+        height: 100%;
     }
 
-    .girl-img > img {
-        background-image: url(image-hero-tablet.png) no-repeat;
+    .gir-img {
         position: relative;
+        
+    }
+
+
+    .girl-img > img {
+        content: url(image-hero-desktop.png);
+        /* crucial thing is to use percentages instead or rem/em/px units so the desired element
+            won't start streching around the screen !!! */ 
+        top: -12%;
+        left: 55%;      
+        
+        position: absolute;
+        max-width: 55vw;
+        /* background-repeat: no-repeat;
+        position: relative;
+        background-position: right;
+        background-size: cover; */
         /* left: 53rem;
-        top: -4rem; */
-        top: -5rem;
-        left: 18rem;
-        max-height: 54rem;
-        padding: 0 4rem 4rem  0;
+        top: -8rem; */
+        
+        
+        /* padding: 0 4rem 4rem  0; */
         
         
         
     }
 
     #upper-container {
-        display: flex;
+        /* display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        align-items: center */
               
         height: 60vh; 
         /* margin: 0 5% 0 5%; */
-        overflow: hidden;
-
+        /* overflow: hidden; */
+        
         
     }
 
@@ -316,11 +336,6 @@ html,body {
         margin-bottom: 2rem;
     }
 
-    #box1 {
-        padding-bottom: 8rem;
-        margin: 0.8rem;        
-    }
-
     .footer-txt {
         justify-content: space-between;
     }
@@ -348,7 +363,34 @@ html,body {
         opacity: 70%;
     }
     
-    #box1, #animation, #design, #photography, #crypto, #business {
-        margin: 0.8rem;
+    #animation, #design, #photography, #crypto, #business {
+        padding: 1em;
+        margin: 1em;
+        height: 11em;
+    }
+
+    #box1 {
+        padding: 1em;
+        margin: 0.5em;
+        height: 4.5em;  
+
+        /* centering a paragraph vertically and horizontally */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 } 
+
+
+
+/* mobile version settings to correct up things better, might have to be implimented in the main code*/
+@media screen and (max-width: 768px ){
+    #box1, #animation, #design, #photography, #crypto, #business {
+        padding: 1em;
+        margin-bottom: 2.5em;
+    }
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+}
